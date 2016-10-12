@@ -1,0 +1,37 @@
+<% include flightshome.ejs %>
+
+<body class="container">
+  <div class="jumbotron">
+    <h1>NEW flight REGISTRATION</h1>
+
+    <form method="post" action="/Flights">
+      <div class="form-group">
+        <label for="planeNo">Plane No</label>
+        <input type="text" class="form-control" id="planeNo" name="newFlight[planeNo]">
+      </div>
+      <div class="form-group">
+        <label for="flyFrom">Fly From</label>
+        <input type="text" class="form-control" id="flyFrom" name="newflight[flyFrom]">
+      </div>
+      <div class="form-group">
+        <label for="flyTo">Fly To</label>
+        <input type="text" class="form-control" id="flyTo" name="newflight[flyTo]">
+      </div>
+      <div class="form-group">
+        <label for="flightTime">Flight Time</label>
+        <input type="text" class="form-control" id="flightTime" name="newflight[flightTime]">
+      </div>
+      <div class="form-group">
+        <label for="noOfSeats">No of Seats</label>
+        <input type="text" class="form-control" id="noOfSeats" name="newflight[noOfSeats]">
+      </div>
+      <div class="form-group">
+        <label for="price">price</label>
+        <input type="text" class="form-control" id="price" name="newflight[price]">
+      </div>
+
+<%# can put name = "newuser[name]" and password = "newuser[password]" in the name s"%>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
